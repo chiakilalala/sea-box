@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>margin_Auto</title>
+    <style>
+    #main {
+        width: 600px;
+        height: 200px;
+        margin: 0 auto; //上下左右
+        background-color: lightblue;
+    }
+    
+    #main-max {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #00FF00;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        設定區塊元素的 width 屬性，可以避免該元素從左到右撐滿容器，然後你可以設定左右外邊距（margin-left 與 margin-right）為 auto 來使其水平居中。元素在顯示的時候，只會顯示到你所指定的寬度，然後剩餘的寬度平均的散落在左右兩邊的邊距上。 唯一的問題是，當瀏覽器視窗寬度比元素的寬度還要窄時，瀏覽器就會出現水平捲軸。讓我們接著來改進這個狀況......
+        <div id="main-max">
+            <p>使用 max-width 替代 width 可以更完美的處理當瀏覽器視窗小於元素寬度的情況，這點在行動裝置上顯得更為重要，你現在就可以調整瀏覽器視窗大小看看這頁的變化！</p>
+            <p>另外，max-width 屬性幾乎在所有的主流瀏覽器都有支援（包括 IE7+ 以後版本），所以各位可以不用擔心有瀏覽器相容性的問題。</p>
+        </div>
+    </div>
+</body>
+
+</html>
